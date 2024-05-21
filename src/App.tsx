@@ -2,7 +2,7 @@ import './styles/global.scss'
 import {
   RouterProvider,
   Outlet,
-  createHashRouter,
+  // createHashRouter,
   createBrowserRouter
 } from "react-router-dom";
 import Navbar from "./componants/navbar/Navbar";
