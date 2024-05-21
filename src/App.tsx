@@ -2,8 +2,8 @@ import './styles/global.scss'
 import {
   RouterProvider,
   Outlet,
-  // createHashRouter,
-  createBrowserRouter
+  createHashRouter,
+  // createBrowserRouter
 } from "react-router-dom";
 import Navbar from "./componants/navbar/Navbar";
 import Footer from "./componants/footer/Footer";
@@ -31,7 +31,7 @@ function App() {
       </div>
     )
   }
-  const router = createBrowserRouter([
+  const router = createHashRouter([
    {
     path : '/',
     element : <Layout/>,
