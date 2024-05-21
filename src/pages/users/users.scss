@@ -2,9 +2,16 @@
      text-transform: capitalize;
      display: flex;
      justify-content: space-between;
+     margin-bottom: 10px;
      
 
      button{
           text-transform: capitalize;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          font-weight: bold;
+          cursor: pointer;
      }
+
 }

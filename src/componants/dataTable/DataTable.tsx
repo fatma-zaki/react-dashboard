@@ -10,9 +10,10 @@ type Props = {
 }
 const DataTable = (props: Props) => {
     
-        const handledelete = ()=>{
+        const handledelete = (id: number)=>{
           // delete item
-          console.log('item has been deleted')
+          console.log( id +'item has been deleted')
+
         }
         const actionColumn : GridColDef = {
           field: 'action',
@@ -25,7 +26,7 @@ const DataTable = (props: Props) => {
                 <Link to={`/${props.slug}/${params.row.id}`} >
                 <img src="/view.svg" alt="" />
                 </Link>
-                <div className="delete" onClick={()=>handledelete()}>
+                <div className="delete" onClick={()=>handledelete(params.row.id)}>
                   <img src="/delete.svg" alt="" />
                 </div>
               </div>

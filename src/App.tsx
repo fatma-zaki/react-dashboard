@@ -2,7 +2,8 @@ import './styles/global.scss'
 import {
   RouterProvider,
   Outlet,
-  createHashRouter
+  createHashRouter,
+  createBrowserRouter
 } from "react-router-dom";
 import Navbar from "./componants/navbar/Navbar";
 import Footer from "./componants/footer/Footer";
@@ -10,6 +11,8 @@ import Menu from "./componants/menu/Menu";
 import Home from "./pages/home/Home";
 import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
+import Product from './pages/product/Product';
+import User from './pages/user/User';
 
 function App() {
   const Layout = ()=>{
@@ -28,7 +31,7 @@ function App() {
       </div>
     )
   }
-  const router = createHashRouter([
+  const router = createBrowserRouter([
    {
     path : '/',
     element : <Layout/>,
@@ -44,6 +47,14 @@ function App() {
       {
         path : '/products',
         element : <Products/>
+      },
+      {
+        path : '/users/:id',
+        element : <User/>
+      },
+      {
+        path : '/products/:id',
+        element : <Product/>
       },
     ]
    }
