@@ -1,3 +1,5 @@
+@import './../../styles/responsive.scss';
+
 .navbar{
      width: 100%;
      display: flex;
@@ -13,6 +15,12 @@
           display: flex;
           gap: 20px;
           align-items: center;
+
+          .icon{
+               @include sm{
+                    display: none;
+               }
+          }
 
           .notifications{
                position: relative;

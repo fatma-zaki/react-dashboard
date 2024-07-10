@@ -1,6 +1,10 @@
+@import './../../styles/responsive.scss';
 .single{
      display: flex;
-
+     @include lg{
+          flex-direction: column;
+          gap: 50px;
+     }
      .view{
           flex: 1;
           .infoSingle{
@@ -43,11 +47,17 @@
                height: 0;
                border: 0.5 solid gray;
                margin: 20px;
+               @include sm{
+                    display: none;
+               }
           }
           .chart{
                width: 80%;
                height: 350px;
-
+               
+               @include sm{
+                    display: none;
+               }
           }
          
      }
@@ -80,7 +90,9 @@
                               min-width: 480px;
                               padding: 15px;
                               background-color: #f45b6810;
-
+                              @include md{
+                                   min-width: 240px;
+                              }
                          p{
                               margin-bottom: 5px;
                          }

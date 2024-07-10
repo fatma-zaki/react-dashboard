@@ -8,10 +8,9 @@ const Navbar = () => {
      <span>FatmaAdmin</span>
      </div>
      <div className='icons'>
-          <img src="search.svg" alt="" />
-          <img src="app.svg" alt="" />
-          <img src="expand.svg" alt="" />
-          <img src="" alt="" />
+          <img src="search.svg" alt=""  className='icon'/>
+          <img src="app.svg" alt="" className='icon' />
+          <img src="expand.svg" alt="" className='icon' />
           <div className="notifications">
                <img src="notifications.svg" alt="" />
                <span>1</span>
